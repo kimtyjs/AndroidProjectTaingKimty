@@ -2,7 +2,7 @@ package com.example.taingkimty.model;
 
 public class Category {
 
-    private int catId;
+    private String catName;
 
     public String getCatName() {
         return catName;
@@ -12,6 +12,6 @@ public class Category {
         this.catName = catName;
     }
 
-    private String catName;
+
 
 }
