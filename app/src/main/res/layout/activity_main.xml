@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        app:title="Home"
+        app:title="E-commerce"
         android:layout_height="?attr/actionBarSize" />
 
 

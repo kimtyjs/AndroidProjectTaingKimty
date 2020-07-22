@@ -18,8 +18,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.nav_menu_bottom);
-        bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
+        Handler handler = new Handler();
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                BottomNavigationView bottomNavigationView = findViewById(R.id.nav_menu_bottom);
+                bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new HomeFragment()).commit();
+
+            }
+        }, 5000);
+
+
 
     }
 
@@ -50,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     assert selectedFragment != null;
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
                     return true;
                 }
 
