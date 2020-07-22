@@ -6,22 +6,23 @@
     >
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/img_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_product"
         android:src="@drawable/img_one"
         />
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/txt_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_gravity="center"
+        android:layout_marginLeft="75dp"
+        android:gravity="center_vertical"
         android:text="Image No"
-        android:textSize="15dp" />
+        android:textSize="15sp"
+        android:textStyle="bold"/>
 
 </LinearLayout>

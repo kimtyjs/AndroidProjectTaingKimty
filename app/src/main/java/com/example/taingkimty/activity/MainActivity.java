@@ -1,4 +1,4 @@
-package com.example.taingkimty;
+package com.example.taingkimty.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 
+import com.example.taingkimty.R;
+import com.example.taingkimty.fragement.AccountFragment;
+import com.example.taingkimty.fragement.CategoryFragment;
+import com.example.taingkimty.fragement.HomeFragment;
+import com.example.taingkimty.fragement.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
